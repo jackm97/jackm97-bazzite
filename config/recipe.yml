@@ -25,6 +25,11 @@ modules:
       - firefox # default firefox re-enabled so firefoxpwa works
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
       - gnome-software-rpm-ostree
+      - PackageKit
+      - gnome-packagekit
+      - gnome-packagekit-common
+      - gnome-packagekit-installer
+      - gnome-packagekit-updater
       - firefoxpwa
     remove:
       - webapp-manager
