@@ -1,0 +1,2 @@
+[org/gnome/shell] 
+favorite-apps=['firefox.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Software.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'io.missioncenter.MissionCenter.desktop', 'com.spotify.Client.desktop', 'org.onlyoffice.desktopeditors.desktop', 'org.cvfosammmm.Setzer.desktop', 'md.obsidian.Obsidian.desktop', 'org.audacityteam.Audacity.desktop', 'org.paraview.ParaView.desktop', 'com.axosoft.GitKraken.desktop']
