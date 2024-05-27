@@ -26,6 +26,7 @@ modules:
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
       - gnome-software-rpm-ostree
       - firefoxpwa
+      - PackageKit
     remove:
       - webapp-manager
 
