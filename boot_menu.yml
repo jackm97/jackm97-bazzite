@@ -1,5 +1,0 @@
-ublue_variants:
-  - label: jackm97/jackm97-bazzite
-    ks: /kickstart/ublue-os.ks
-    flavors:
-      - label: jackm97-bazzite
