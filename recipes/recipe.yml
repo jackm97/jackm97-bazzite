@@ -22,10 +22,8 @@ modules:
   - type: rpm-ostree
     repos:
     install:
-      - firefox # default firefox re-enabled so firefoxpwa works
-      - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
-      - firefoxpwa
       - PackageKit
+      - gnome-software-rpm-ostree
     remove:
 
   - type: default-flatpaks
