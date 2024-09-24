@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo nvidia-ctk cdi generate --output=/etc/cdi/nvidia.yaml
+
+echo "Container toolkit configured. Listing available devices: "
+
+nvidia-ctk cdi list

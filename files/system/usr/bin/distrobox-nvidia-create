@@ -1,0 +1,3 @@
+#!/bin/bash
+
+distrobox create --additional-flags "--device nvidia.com/gpu=all --security-opt=label=disable" "$@"

@@ -21,9 +21,19 @@ modules:
 
   - type: rpm-ostree
     repos:
+      - https://nvidia.github.io/libnvidia-container/stable/rpm/nvidia-container-toolkit.repo
+      - insync.repo
+    keys:
+      - https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
     install:
       - PackageKit
       - gnome-software-rpm-ostree
+      - kitty
+      - nvidia-container-toolkit
+      - insync
+      - insync-nautilus.rpm
+      - gcc
+      - gcc-c++
     remove:
 
   - type: default-flatpaks
@@ -40,13 +50,11 @@ modules:
         - com.mattjakeman.ExtensionManager
         - com.spotify.Client
         - md.obsidian.Obsidian
-        - com.axosoft.GitKraken
-        - org.cvfosammmm.Setzer
         - org.onlyoffice.desktopeditors
         - org.audacityteam.Audacity
-        - io.github.celluloid_player.Celluloid
         - com.github.tchx84.Flatseal
         - org.paraview.ParaView
+        - com.obsproject.Studio
       remove:
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
