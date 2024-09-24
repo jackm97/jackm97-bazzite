@@ -40,13 +40,10 @@ jobs:
         uses: jasonn3/build-container-installer@main
         id: build
         with:
-          arch: ${{ env.ARCH}}
-          image_name: ${{ env.IMAGE_NAME}}
-          image_repo: ${{ env.IMAGE_REPO}}
-          image_tag: ${{ env.IMAGE_TAG }}
-          version: ${{ env.VERSION }}
-          variant: ${{ env.VARIANT }}
-          iso_name: ${{ env.IMAGE_NAME }}-${{ env.IMAGE_TAG }}-${{ env.VERSION }}.iso
+          image_reop: ghcr.io/jackm97
+          image_name: jackm97-bazzite
+          image_tag: latest
+          iso_name: jackm97-bazzite.iso
 
       # This example is for uploading your ISO as a Github artifact. You can do something similar using any cloud storage, so long as you copy the output
       - name: Upload ISO as artifact
