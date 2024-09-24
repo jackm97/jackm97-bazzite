@@ -31,7 +31,7 @@ modules:
       - kitty
       - nvidia-container-toolkit
       - insync
-      - insync-nautilus.rpm
+      # - insync-nautilus.rpm
       - gcc
       - gcc-c++
     remove:
