@@ -10,6 +10,12 @@ on:
 
   pull_request:
   workflow_dispatch: # allow manually triggering builds
+
+env:
+  IMAGE_NAME: "jackm97-bazzite"
+  IMAGE_REPO: ghcr.io/jackm97
+  IMAGE_TAG: latest
+
 jobs:
   bluebuild:
     name: Build Custom Image
@@ -40,10 +46,10 @@ jobs:
         uses: jasonn3/build-container-installer@main
         id: build
         with:
-          image_reop: ghcr.io/jackm97
-          image_name: jackm97-bazzite
-          image_tag: latest
-          iso_name: jackm97-bazzite.iso
+          image_name: ${{ env.IMAGE_NAME}}
+          image_repo: ${{ env.IMAGE_REPO}}
+          image_tag: ${{ env.IMAGE_TAG }}
+          iso_name: ${{ env.IMAGE_NAME }}-${{ env.IMAGE_TAG }}-${{ env.VERSION }}.iso
 
       # This example is for uploading your ISO as a Github artifact. You can do something similar using any cloud storage, so long as you copy the output
       - name: Upload ISO as artifact
