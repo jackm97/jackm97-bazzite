@@ -30,8 +30,6 @@ modules:
       - gnome-software-rpm-ostree
       - kitty
       - nvidia-container-toolkit
-      - insync
-      # - insync-nautilus.rpm
       - gcc
       - gcc-c++
     remove:
